@@ -96,6 +96,14 @@ a {
     border: 2px solid var(--secondary-color);
 }
 
+.heading.lv2 {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -0.02em;
+}
+
 /* =============Header============= */
 .header {
     background-color: var(--primary-color);
@@ -254,12 +262,7 @@ a {
 }
 
 .services__heading {
-    color: #10375c;
     text-align: center;
-    font-size: 5rem;
-    font-weight: 600;
-    line-height: 1.2; /* 120% */
-    letter-spacing: -0.02em;
 }
 
 .services__desc {
@@ -320,7 +323,8 @@ a {
     margin-right: 19px;
     border-radius: 100rem;
     border: none;
-    background-color: #EFF6FD;
+    background-color: #eff6fd;
+    cursor: pointer;
 }
 
 .services__btn:hover {
@@ -330,4 +334,79 @@ a {
 
 .services__cta {
     margin-top: 55px;
+}
+
+/* How it works */
+.how-it-works {
+    margin-top: 105px;
+    padding: 100px 0 116px;
+    background-color: #f6fbff;
+}
+
+.hiw__heading {
+    color: #10375c;
+    font-family: Sora;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */
+    letter-spacing: -1px;
+}
+
+.hiw__desc,
+.hiw-list__desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hiw-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.hiw__item {
+    width: 33%;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+}
+
+.hiw__item__body {
+    padding: 43px 42px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.hiw-list__title {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.hiw-list__desc {
+    margin-top: 28px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.hiw-list__link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #575f66;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.hiw-list__link:hover {
+    color: var(--secondary-color);
+}
+
+.hiw__item:hover {
+    border-color: var(--secondary-color);
 }
