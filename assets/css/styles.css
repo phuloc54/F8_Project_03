@@ -283,7 +283,7 @@ a {
 }
 
 .services__img {
-    width: 570px;
+    width: 470px;
     height: 570px;
     border-radius: 12px;
     object-fit: cover;
@@ -336,7 +336,7 @@ a {
     margin-top: 55px;
 }
 
-/* How it works */
+/* ============How it works============== */
 .how-it-works {
     margin-top: 105px;
     padding: 100px 0 116px;
@@ -409,4 +409,50 @@ a {
 
 .hiw__item:hover {
     border-color: var(--secondary-color);
+}
+
+/* ===========Features======== */
+.features__body {
+    display: flex;
+    align-items: center;
+    padding: 65px 0;
+    margin-top: 105px;
+    gap: 130px;
+}
+
+.features__images {
+    display: flex;
+    width: 49%;
+}
+
+.features__img:first-child {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.features__img:last-child {
+    margin-top: 121px;
+    margin-left: -274px;
+    border-radius: 6px;
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.features__text {
+    width: 41%;
+}
+
+.features__desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.features-cta {
+    margin-top: 38px;
 }
