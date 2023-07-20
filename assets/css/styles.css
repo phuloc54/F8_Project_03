@@ -123,7 +123,7 @@ a {
 .header {
     background-color: var(--primary-color);
     padding-top: 30px;
-    height: calc(100vh - 30px);
+    height: 100vh;
 }
 
 .header-top {
@@ -256,14 +256,18 @@ a {
     margin-left: 113px;
 }
 
+/* Xet width va height cho 2 img la don vi tuyet doi */
+
 .hero__img:first-child {
     width: 330px;
     height: 540px;
     border-radius: 6px;
     object-fit: cover;
+    z-index: 1;
 }
 
 .hero__img:last-child {
+    margin-left: -6px;
     width: 210px;
     height: 410px;
     border-radius: 0px 6px 6px 0px;
@@ -283,6 +287,7 @@ a {
 .services__desc {
     margin-top: 18px;
     color: #575f66;
+    /* Khi hoc responsive thi ta dung max-width 468px */
     width: 468px;
     text-align: center;
     max-width: 100%;
@@ -298,7 +303,7 @@ a {
 }
 
 .services__img {
-    width: 470px;
+    width: 570px;
     height: 570px;
     border-radius: 12px;
     object-fit: cover;
@@ -315,6 +320,11 @@ a {
 
 .services__item:hover {
     box-shadow: 14px 14px 28px 14px rgba(0, 0, 0, 0.1);
+}
+
+.services__item:hover .services__btn {
+    color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .services__title {
@@ -342,10 +352,6 @@ a {
     cursor: pointer;
 }
 
-.services__btn:hover {
-    color: #fff;
-    background-color: var(--secondary-color);
-}
 
 .services__cta {
     margin-top: 55px;
