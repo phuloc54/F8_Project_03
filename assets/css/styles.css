@@ -320,6 +320,7 @@ a {
 
 .services__item:hover {
     box-shadow: 14px 14px 28px 14px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .services__item:hover .services__btn {
@@ -391,6 +392,7 @@ a {
 
 .hiw__item {
     width: 33%;
+    background-color: #eaf6ff;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
 }
@@ -430,6 +432,9 @@ a {
 
 .hiw__item:hover {
     border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    transform: translateY(-16px);
+    transition: .5s;
 }
 
 /* ===========Features======== */
