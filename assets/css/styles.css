@@ -104,6 +104,21 @@ a {
     letter-spacing: -0.02em;
 }
 
+.button {
+    color: #575f66;
+    width: 36px;
+    height: 36px;
+    border-radius: 100rem;
+    border: 1px solid #575f66;
+    background-color: #fff;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
 /* =============Header============= */
 .header {
     background-color: var(--primary-color);
@@ -339,7 +354,7 @@ a {
 /* ============How it works============== */
 .how-it-works {
     margin-top: 105px;
-    padding: 100px 0 116px;
+    padding: 100px 0 100px;
     background-color: #f6fbff;
 }
 
@@ -455,4 +470,344 @@ a {
 
 .features-cta {
     margin-top: 38px;
+}
+
+/* =================Doctors========== */
+.doctor {
+    margin-top: 105px;
+    padding: 65px 0;
+}
+
+.doctor__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor__heading {
+    text-align: center;
+}
+
+.doctor-cta {
+    margin-top: 38px;
+}
+
+.doctor__list {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.doctor__item {
+    flex-shrink: 0;
+    width: calc(25% - 22.5px);
+    border-radius: 6px;
+}
+
+.item__background {
+    background-color: #eaf6ff;
+    height: 318px;
+}
+
+.doctor__img {
+    margin-top: 28px;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.doctor__body {
+    text-align: center;
+}
+
+.doctor__name {
+    margin-top: 12px;
+    color: #10375c;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.doctor__desc {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+
+.doctor__buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+/* ========Install========== */
+.install {
+    margin-top: 200px;
+}
+
+.install__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 427px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.install__img {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+}
+
+.install__info {
+    margin-left: 514px;
+    width: 586px;
+    max-width: 100%;
+}
+
+.install__heading.heading {
+    color: #fff;
+}
+.install__desc {
+    margin-top: 18px;
+    color: #ddd;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.install__link {
+    display: flex;
+    gap: 28px;
+    margin-top: 38px;
+}
+
+/* ===============News================ */
+.news {
+    margin-top: 105px;
+    padding: 65px 0;
+}
+
+.news__rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__info {
+    width: 470px;
+    max-width: 100%;
+}
+
+.info__link {
+    margin-top: 28px;
+    display: inline-block;
+    color: #10375c;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+.info__buttons {
+    margin-top: 28px;
+    display: flex;
+    gap: 18px;
+}
+
+.news__list {
+    width: 570px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.news__item {
+    flex-shrink: 0;
+    width: calc(50% - 15px);
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+}
+
+.news__item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.news__item:hover .news__item__link {
+    color: var(--secondary-color);
+}
+
+.news__thumb {
+    margin: -1px;
+    width: calc(100% + 2px);
+    height: 172px;
+    object-fit: cover;
+}
+
+.item__body {
+    padding: 18px 22px 21px;
+}
+
+.news__title {
+    color: #10375c;
+    font-weight: 600;
+    line-height: 1.62; /* 162.5% */
+}
+
+.news__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71; /* 171.429% */
+}
+
+.news__item__link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* ==========Appointment=========== */
+.appointment {
+    margin-top: 170px;
+}
+
+.appointment__body {
+    text-align: center;
+    background-color: #f6fbff;
+    padding: 100px 0;
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appointment__heading::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.appointment__desc {
+    margin: 18px auto 0;
+    width: 617px;
+    max-width: 100%;
+
+    color: #575f66;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.appointment-cta {
+    margin-top: 38px;
+}
+
+/* =============Footer============ */
+.footer {
+    margin-top: 170px;
+    background-color: var(--primary-color);
+}
+
+.footer__body {
+    display: flex;
+    gap: 78px;
+    padding: 100px 0 42px;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer__list {
+    margin-top: 20px;
+}
+
+.footer__item {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.footer__desc,
+.footer__item__link {
+    margin-top: 21px;
+    color: #a9b3bb;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer__item__link {
+    margin-top: 0;
+}
+
+.footer__title:nth-of-type(2) {
+    margin-top: 28px;
+}
+
+.footer__socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 100rem;
+    background-color: #fff;
+}
+
+.icon__socials:first-child {
+    background-color: var(--secondary-color);
+}
+
+.footer__subscribe {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.write-email {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+}
+
+.subscribe-button {
+    min-width: 108px;
+    height: 46px;
+    border-radius: 4px;
+
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
