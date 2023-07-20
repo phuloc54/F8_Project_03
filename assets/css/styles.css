@@ -105,15 +105,23 @@ a {
 }
 
 .button {
-    color: #575f66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 36px;
     height: 36px;
+    
+    color: #575f66;
     border-radius: 100rem;
     border: 1px solid #575f66;
     background-color: #fff;
+    
+    transition: 0.25s;
 }
 
 .button:hover {
+    border-color: var(--secondary-color);
     color: white;
     background-color: var(--secondary-color);
     cursor: pointer;
@@ -372,7 +380,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 60px; /* 120% */
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
 }
 
 .hiw__desc,
@@ -384,10 +392,14 @@ a {
     line-height: 1.66; /* 166.667% */
 }
 
+.hiw__desc {
+    width: 468px;
+}
+
 .hiw-list {
     display: flex;
     gap: 30px;
-    margin-top: 70px;
+    margin-top: 86px;
 }
 
 .hiw__item {
@@ -446,6 +458,7 @@ a {
     gap: 130px;
 }
 
+/* Cho images nay F8 de dvi la phan tram lun nha */
 .features__images {
     display: flex;
     width: 49%;
@@ -468,7 +481,10 @@ a {
 }
 
 .features__text {
-    width: 41%;
+    /* width: 41%; */
+
+    /* cho nay xet width hay k xet width cx dc tai vi khi ta lay 1170px - 570px - 130px thi con lai dung 470px n
+    nen k can xet width cung dc */
 }
 
 .features__desc {
@@ -490,12 +506,6 @@ a {
 }
 
 .doctor__top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.doctor__heading {
     text-align: center;
 }
 
@@ -519,11 +529,12 @@ a {
 .item__background {
     background-color: #eaf6ff;
     height: 318px;
+    border-radius: 6px;
 }
 
 .doctor__img {
     margin-top: 28px;
-    width: 100%;
+    max-width: 100%;
     height: 290px;
     object-fit: cover;
 }
