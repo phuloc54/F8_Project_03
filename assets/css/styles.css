@@ -719,13 +719,13 @@ a {
 /* =============Footer============ */
 .footer {
     margin-top: 170px;
+    padding: 100px 0 42px;
     background-color: var(--primary-color);
 }
 
 .footer__body {
     display: flex;
     gap: 78px;
-    padding: 100px 0 42px;
 }
 
 .footer__title {
@@ -810,4 +810,21 @@ a {
     font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+.separate {
+    margin-top: 28px;
+    width: 1170px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #406181;
+}
+
+.copyright {
+    margin-top: 28px;
+    text-align: center;
+    color: #aab3ba;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
