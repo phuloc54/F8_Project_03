@@ -761,8 +761,9 @@ a {
 }
 
 .footer__body {
-    display: flex;
-    gap: 78px;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
 }
 
 .footer__title {
@@ -781,11 +782,17 @@ a {
     white-space: nowrap;
 }
 
-.footer__desc,
-.footer__item__link {
+.footer__desc {
     margin-top: 21px;
     color: #a9b3bb;
     font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer__item__link {
+    color: #a9b3bb;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85; /* 185.714% */
@@ -818,6 +825,11 @@ a {
 
 .icon__socials:first-child {
     background-color: var(--secondary-color);
+}
+
+.footer__column:last-child .footer__desc{
+    max-width: 273px;
+   font-size: 1.4rem;   
 }
 
 .footer__subscribe {
