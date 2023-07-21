@@ -127,6 +127,9 @@ a {
     cursor: pointer;
 }
 
+input, textarea, select, button {
+    font-family: inherit;
+}
 /* =============Header============= */
 .header {
     background-color: var(--primary-color);
@@ -393,7 +396,8 @@ a {
 }
 
 .hiw__desc {
-    width: 468px;
+    max-width: 468px;
+    /* anh Son noi la de width hay max-width cx dc */
 }
 
 .hiw-list {
@@ -758,6 +762,8 @@ a {
     margin-top: 170px;
     padding: 100px 0 42px;
     background-color: var(--primary-color);
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer__body {
@@ -820,43 +826,57 @@ a {
     width: 32px;
     height: 32px;
     border-radius: 100rem;
+
+    color: var(--secondary-color);
     background-color: #fff;
 }
 
-.icon__socials:first-child {
+.icon__socials:hover {
     background-color: var(--secondary-color);
+    color: #fff;
 }
 
-.footer__column:last-child .footer__desc{
+.footer__column:last-child .footer__desc {
     max-width: 273px;
-   font-size: 1.4rem;   
+    font-size: 1.4rem;
 }
 
-.footer__subscribe {
+.footer-form {
     margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.write-email {
-    margin-top: 0;
+.footer-form__input {
     display: flex;
     align-items: center;
-    padding-left: 10px;
+
+    margin-top: 0;
+    padding:0 10px;
     width: 212px;
     height: 46px;
+
+    color: #9CA8B1;
+
+    background-color: transparent;
+    outline: none;
     border-radius: 4px;
     border: 1px solid #406181;
 }
 
-.subscribe-button {
+.footer-form__input::placeholder {
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.footer__submit {
     min-width: 108px;
     height: 46px;
     border-radius: 4px;
-
+    border: none;
     color: #fff;
-    font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 600;
 }
